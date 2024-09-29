@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"wave_create_machine\startup_stm32f103xb.o"
+"wave_create_machine\main.o"
+"wave_create_machine\stm32f1xx_it.o"
+"wave_create_machine\stm32f1xx_hal_msp.o"
+"wave_create_machine\stm32f1xx_hal_gpio_ex.o"
+"wave_create_machine\stm32f1xx_hal_i2c.o"
+"wave_create_machine\stm32f1xx_hal.o"
+"wave_create_machine\stm32f1xx_hal_rcc.o"
+"wave_create_machine\stm32f1xx_hal_rcc_ex.o"
+"wave_create_machine\stm32f1xx_hal_gpio.o"
+"wave_create_machine\stm32f1xx_hal_dma.o"
+"wave_create_machine\stm32f1xx_hal_cortex.o"
+"wave_create_machine\stm32f1xx_hal_pwr.o"
+"wave_create_machine\stm32f1xx_hal_flash.o"
+"wave_create_machine\stm32f1xx_hal_flash_ex.o"
+"wave_create_machine\stm32f1xx_hal_exti.o"
+"wave_create_machine\stm32f1xx_hal_tim.o"
+"wave_create_machine\stm32f1xx_hal_tim_ex.o"
+"wave_create_machine\system_stm32f1xx.o"
+"wave_create_machine\lyquidcrystal_i2c.o"
+"wave_create_machine\button.o"
+--strict --scatter "Wave_create_machine\Wave_create_machine.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Wave_create_machine.map" -o Wave_create_machine\Wave_create_machine.axf
